@@ -3,8 +3,7 @@ dotenv.config({ path: './env' });
 
 import connectDB from "./db/index.js"; // Correct path
 import express from 'express';
-
-const app = express();
+import app from './app.js';
 
 (async () => {
     try {
@@ -24,3 +23,5 @@ const app = express();
         throw error;
     }
 })();
+
+
